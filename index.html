@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Zadań</title>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Zadań</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Lista zadań ✅</h1>
+        
+        <div class="input-area">
+            <input type="text" id="task-input" placeholder="Dodaj nowe zadanie...">
+            <button id="add-task-btn">Dodaj zadanie</button>
+        </div>
+        
+        <div class="filter-area">
+            <button class="filter-btn active" data-filter="all">Wszystkie</button>
+            <button class="filter-btn" data-filter="active">Aktywne</button>
+            <button class="filter-btn" data-filter="completed">Wykonane</button>
+        </div>
+
+        <ul id="task-list">
+            </ul>
+        
+        <p id="empty-message" class="hidden">Brak zadań. Dodaj coś!</p>
+
+        <div class="footer-area">
+            <span class="task-count">
+                Aktywne: <span id="active-tasks-count">0</span>
+            </span>
+            
+            <button id="clear-completed-btn">Wyczyść wykonane</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
